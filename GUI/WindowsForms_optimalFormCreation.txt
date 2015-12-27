@@ -1,0 +1,21 @@
+1) User Control AngebotList erstellen
+2) Dann von ToolBox einen TableLayoutPanel holen und diesen in AngebotList hinzufügen und speichern!
+3) Beim kleinen Pfeil dieses Panels eine Spalte hinzufügen und eine Zeile hinzufügen!
+4) Dann Suchleiste in die zweite Spalte Erste Zeile hinzufügen.
+5) Dann das SuchLable in die erste Spalte und erste Zeile hinzufügen.
+6) Dann beim kleinen Pfeil des Panels auf "Zeilen und Spalten bearbeiten"
+	.)eine column hinzufügen
+	.)alle colums unter dem reiter spalten auf den absolut wert 80 einstellen
+	.)bei column 2 den prozentwert auf 100%
+	.)Karteireiter auf Rows wechseln
+	.)OptimalWerte die man für die einstellungen nimmt ist normalerweise 23...also Wert auf 23 bei row 1 und row 3
+	.)Dann Row2 Wert auf 100% wieder.
+
+7) dann auf properties von der Suchleiste und ColumnSpan auf Wert 3
+8) Dock Wert auf Fill (mittlerer großer Kasten)
+9) dann auf properties von Such Layer...Dock wieder auf fill, eigentlich bei allen buttons und controls(also die felder)
+ + Textalign auf MiddleRight
+10) Die Daten Listview wurde bei Multiselect auf False gesetzt...column span auf 4 und View auf Details
+11) hinzufügen auf column 0...dock = fill wieder mal....margin 1;1;1;1 (gilt für den löschen und bearbeiten button)
+12) bei bearbeiten button column auf 2....dock wie gehabt...margin wie gehabt auf 1;1;1;1
+13) bei löschen button column auf 3....dock wie gehabt...margin wie gehabt auf 1;1;1;1

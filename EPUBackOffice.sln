@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{7A08B2BA-9EA5-485F-A5FC-FB5C50F47CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAO\DAL.csproj", "{58280C3E-8029-4CED-9EFB-DF747BEC2359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{EB31B06C-6079-49A4-80D1-4F399EE7D8BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{AA536273-B817-4F6B-B98B-B74D665C7AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test.Domain\Test.csproj", "{FCD4BA78-4C43-4B7B-A055-88232662D20B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D86306B7-893A-4502-81D2-1D5BF85AE6FC}"
+	ProjectSection(SolutionItems) = preProject
+		EPUBackOffice.vsmdi = EPUBackOffice.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = EPUBackOffice.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A08B2BA-9EA5-485F-A5FC-FB5C50F47CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A08B2BA-9EA5-485F-A5FC-FB5C50F47CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A08B2BA-9EA5-485F-A5FC-FB5C50F47CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A08B2BA-9EA5-485F-A5FC-FB5C50F47CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58280C3E-8029-4CED-9EFB-DF747BEC2359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58280C3E-8029-4CED-9EFB-DF747BEC2359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58280C3E-8029-4CED-9EFB-DF747BEC2359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58280C3E-8029-4CED-9EFB-DF747BEC2359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB31B06C-6079-49A4-80D1-4F399EE7D8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB31B06C-6079-49A4-80D1-4F399EE7D8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB31B06C-6079-49A4-80D1-4F399EE7D8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB31B06C-6079-49A4-80D1-4F399EE7D8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA536273-B817-4F6B-B98B-B74D665C7AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA536273-B817-4F6B-B98B-B74D665C7AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA536273-B817-4F6B-B98B-B74D665C7AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA536273-B817-4F6B-B98B-B74D665C7AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD4BA78-4C43-4B7B-A055-88232662D20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD4BA78-4C43-4B7B-A055-88232662D20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD4BA78-4C43-4B7B-A055-88232662D20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD4BA78-4C43-4B7B-A055-88232662D20B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

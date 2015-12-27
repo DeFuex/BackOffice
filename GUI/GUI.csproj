@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA536273-B817-4F6B-B98B-B74D665C7AE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\GUI.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\GUI.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AngebotDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AngebotDetail.Designer.cs">
+      <DependentUpon>AngebotDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AngebotList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AngebotList.Designer.cs">
+      <DependentUpon>AngebotList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AusgangsrechnungDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AusgangsrechnungDetail.Designer.cs">
+      <DependentUpon>AusgangsrechnungDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AusgangsrechnungList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AusgangsrechnungList.Designer.cs">
+      <DependentUpon>AusgangsrechnungList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Binding\DataBinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Binding\ErrorMaintenance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Binding\IRule.cs" />
+    <Compile Include="Binding\PositiveInputRule.cs" />
+    <Compile Include="Binding\RequiredInputRule.cs" />
+    <Compile Include="BuchungszeileDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuchungszeileDetail.Designer.cs">
+      <DependentUpon>BuchungszeileDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuchungszeileList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuchungszeileList.Designer.cs">
+      <DependentUpon>BuchungszeileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EingangsrechnungDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EingangsrechnungDetail.Designer.cs">
+      <DependentUpon>EingangsrechnungDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EingangsrechnungList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EingangsrechnungList.Designer.cs">
+      <DependentUpon>EingangsrechnungList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KontaktDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KontaktDetail.Designer.cs">
+      <DependentUpon>KontaktDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KontaktList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KontaktList.Designer.cs">
+      <DependentUpon>KontaktList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KundeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KundeDetail.Designer.cs">
+      <DependentUpon>KundeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KundeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KundeList.Designer.cs">
+      <DependentUpon>KundeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjektDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjektDetail.Designer.cs">
+      <DependentUpon>ProjektDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProjektList.Designer.cs">
+      <DependentUpon>ProjektList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechnungszeileDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechnungszeileDetail.Designer.cs">
+      <DependentUpon>RechnungszeileDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RechnungszeileList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechnungszeileList.Designer.cs">
+      <DependentUpon>RechnungszeileList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AngebotDetail.resx">
+      <DependentUpon>AngebotDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AngebotList.resx">
+      <DependentUpon>AngebotList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AusgangsrechnungDetail.resx">
+      <DependentUpon>AusgangsrechnungDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AusgangsrechnungList.resx">
+      <DependentUpon>AusgangsrechnungList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuchungszeileDetail.resx">
+      <DependentUpon>BuchungszeileDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuchungszeileList.resx">
+      <DependentUpon>BuchungszeileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EingangsrechnungDetail.resx">
+      <DependentUpon>EingangsrechnungDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EingangsrechnungList.resx">
+      <DependentUpon>EingangsrechnungList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KontaktDetail.resx">
+      <DependentUpon>KontaktDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KontaktList.resx">
+      <DependentUpon>KontaktList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KundeDetail.resx">
+      <DependentUpon>KundeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KundeList.resx">
+      <DependentUpon>KundeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjektDetail.resx">
+      <DependentUpon>ProjektDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjektList.resx">
+      <DependentUpon>ProjektList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RechnungszeileDetail.resx">
+      <DependentUpon>RechnungszeileDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechnungszeileList.resx">
+      <DependentUpon>RechnungszeileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{EB31B06C-6079-49A4-80D1-4F399EE7D8BA}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{7A08B2BA-9EA5-485F-A5FC-FB5C50F47CE8}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(SolutionDir)DAO\bin\$(Configuration)\Db"
+mkdir "$(ProjectDir)$(OutDir)Db\"
+copy * "$(ProjectDir)$(OutDir)Db\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
